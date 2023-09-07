@@ -1,0 +1,154 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Prompt:wght@400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+body{
+    background-color: rgb(7, 7, 39);
+}
+.app{
+    background-color: rgb(255, 255, 255);
+    width: 650px;
+    margin: 70px auto 0;
+    padding: 30px;
+    border-radius: 10px;
+
+}
+.app h1{
+    font-weight: 800;
+    font-size: 25px;
+    color: #D71313;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+    
+
+}
+.quiz{
+    padding: 20px 0;
+
+}
+.quiz h2{
+    font-size: 22px;
+    font-weight: 600;
+    color: #001e4d;
+    
+}
+.btn{
+    background-color:rgba(0, 0, 95,0.1);
+    color: rgb(34, 34, 34);
+    font-weight: 500;
+    font-size: 15px;
+    width: 100%;
+    border: 1px solid #222;
+    margin: 10px 0;
+    padding: 10px;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.btn:hover:not([disabled]){
+    background-color: #222;
+    color: #fff;
+}
+.btn:disabled{
+    cursor: no-drop;
+}
+#nxt-btn{
+    background-color:rgb(2, 20, 77); ;
+    color: #fff;
+    border-radius: 4px;
+    width: 150px;
+    padding: 10px;
+    font-weight: 500;
+    margin: 20px auto 0;
+    display: none;
+    cursor: pointer;
+
+
+}
+.correct{
+    background: green;
+}
+.incorrect{
+    background: red;
+}
+#welcome{
+    background-color: #fff;
+    color:#001e4d;
+    padding: 5px 30px 2px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+        top: 0;
+    
+   
+
+}
+p{
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: .02cm;
+}
+
+#pdiv{
+    max-width: 50%;
+}
+#p1,#p2{
+    color:#001e4d;
+    font-size:15px;
+}
+#p2,h1{
+    color: #D71313;
+}
+
+/* shakking buttons */
+.but {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    15%, 90% {
+      transform: translate3d(-1px, 2px, 0);
+    }
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+    40%, 60% {
+      transform: translate3d(5px, 10px, 0);
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .app{
+        width: 85%; 
+       
+    }
+    .app h1, p {
+        font-size:22px ;
+    }
+    .quiz h2{
+        font-size: 18px;
+    }
+    #p1,#p2{
+        font-size: 13px;
+    }
+    .btn{
+        font-size:14px ;
+        padding: 8px;
+  }
+}
